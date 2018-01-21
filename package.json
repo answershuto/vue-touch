@@ -1,9 +1,9 @@
 {
-  "name": "vue-touch",
-  "version": "1.0.0",
-  "description": "a Vue.js touch project",
+  "name": "touch-vue",
+  "version": "1.0.2",
+  "description": "a Vue.js(2.0) touch project",
   "author": "Cao Yang",
-  "private": true,
+  "main": "dist/app.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -11,6 +11,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "release": "webpack --config build/webpack.release.conf.js",
     "build": "node build/build.js"
   },
   "dependencies": {
