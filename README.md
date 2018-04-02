@@ -1,30 +1,26 @@
-# vue-touch
+# touch-vue
 
-> a Vue.js touch project
+> Touch events plugin for Vue.js(2.0)
 
-## Build Setup
+[https://github.com/answershuto/vue-touch](https://github.com/answershuto/vue-touch)
 
-``` bash
-# install dependencies
-npm install
+## Installing
 
-# serve with hot reload at localhost:8080
-npm run dev
+> npm i touch-vue
 
-# build for production with minification
-npm run build
+## API Usage
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```javascript
+import touchVue from 'touch-vue';
+Vue.use(touchVue);
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```html
+<div v-touch="handleTouch">touch me</div>
+```
+
+```javascript
+handleTouch (type) {
+    //...
+}
+```
