@@ -24,3 +24,7 @@ handleTouch (type) {
     //...
 }
 ```
+
+## LICENSE
+
+[MIT](https://opensource.org/licenses/MIT)
